@@ -1,16 +1,16 @@
 {
-  "name": "foley",
-  "description": "A modern, opinionated frontend workflow for building a static website and blog",
-  "version": "0.3.1",
+  "name": "frontendphil.com-2016",
+  "description": "The website for Phil Lennon",
+  "version": "0.1.0",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fephil/foley.git"
+    "url": "https://github.com/fephil/frontendphil.com-2016.git"
   },
   "bugs": {
-    "url": "https://github.com/fephil/foley/issues"
+    "url": "https://github.com/fephil/frontendphil.com-2016/issues"
   },
   "engines": {
     "node": ">= 4"
