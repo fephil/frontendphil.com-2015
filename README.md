@@ -18,6 +18,6 @@
 
 This is the source code for the website of Phil Lennon.
 
-This website has been made with my frontend workflow [Foley](https://github.com/PJL101/foley), and is automatically built and published to [http://frontendphil.com](http://frontendphil.com), with Travis CI using GitHub Pages. You can see the output of this on the output [website repository](https://github.com/fephil/fephil.github.io).
+This website has been made with my frontend workflow [Foley v0.3.2](https://github.com/PJL101/foley), and is automatically built and published to [http://frontendphil.com](http://frontendphil.com), with Travis CI using GitHub Pages. You can see the output of this on the output [website repository](https://github.com/fephil/fephil.github.io).
 
 Please feel free to raise any issues, pull requests, comments etc. I am vey open to feedback, positive or negative!
