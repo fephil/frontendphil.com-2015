@@ -2,13 +2,15 @@ git:
   depth: 1
 language: node_js
 node_js:
-  - 'stable'
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_script:
-  - npm set progress=false
-  - npm install gulp-cli -g
-  - chmod +x ./deploy-ghpages.sh
+- npm set progress=false
+- npm install gulp-cli -g
+- chmod +x ./deploy-ghpages.sh
 script: "./deploy-ghpages.sh"
-secure: "zlxiFdOSJevLgzr4k7IOMAFo9z7ADlkY0DMhj7fiSqqEv7dH4qvtaIRXX2Nnwt4cWhkJXd63sFZIzb9aFg7fpeZShwp5UcxAdlfSTlhzik0PZeefJn4hVV+KLZl4OG9d2yvlEmFhacmaZXvJmTb4JNF0W6qLtAElLbm168/v/SadALELRnHKhmOlhc3IY0JL+p2iG9RKIUwoXdrkVvfyYbNiL/iVJ9nYJGUtTyqos+fWXzuu3tOmbjZyZamij/AcyogsRXNbEPX1Q45MlJs9zEMsKigEkm7zv4wCQa/GJoKT4Oa0aevHJSrYB0f1jnonMI/XpgDfeMiiQyOaGF7lcGygKYrzPNsvS/BXtaTC1rLIOCZULIUBYcXNzqkljnI6a9gziFvBLprX+ptqc2EK8l73U3VEgPKqZhuVXP8fjXj92+sMWQak35kZZ/YMXrVUNdVtUQq8QdVlwWWQViO894VHKDobsXzFWX0SBZ8GRZD/Lm3b2fJVOyGdkpnvoRWd9BnMm1jpq4JxoBTl98Mu3mFx2DC4t5UU7/KCuDRH39xLPVnVRbNBwwI5YCfalMLV+Ucji0Brbgu4ncliqqKvAtoOQRqRhFm+Vvnm+H44wS9HrcsGfjEKbrQtDJbfjX2gCzZ0B+1NYtw3Xant6KOyPv6cmPcofP36aB6u/css4rE="
+env:
+  global:
+    secure: x4t32NS8Kk5PbIpD3tkreSukFOp05712OYQcmXmUzmmQ0+bSA/CI1mpgOLTjq0WCiMHWXGEV4g7vkhgN0RLtvv15BNoOwuWgC9Si7ohp6TcDyew4jl+PJdoD5Q7goB+Hs1YWCEal0Gnjv09B7IOYaUNjO5xKhoDXF+sRdtDCLWVhcob16c2zalAem7bXEvLTFZNS4fSm7tGfZW4vbbShys5mJAKCeT5HrcFAxv754ThiCuYAqm6WI9oT0/uPjLmJ3/bTFX3YoCcwqj9JxZyzKevfu6gKQp0rHR/qt8ZLynWIpyEwl+t3u4XnP7XnJ59n3DmNex+NUbrc79ffdzWxhhAuRPLtVgcCU8nfl93Ph595j6M++UfWaTRc9WtFpv6gX4nj6QMn5cG7btfuNFe72DKMrAFMumqhSdHsLhUeqLhTUyNTw0hO8aqcM7PmyuCgbkcvzbO8MgQ9ofTA83/vPrgmf7t79uirPV/+/2jRIuEAuiRNiNlTX2rWzNdVL8xPnS+8KZtAuy/Q4oVnHFgKNE6jRkz7Nbd5EIZU4nQmi9F8GiayOwEt1xu2j52DrUWV5bjHULAjJK51TSmyxsdNAxVnlkIjuwJIyE4lxiavltwXAY3MDdkFb/1Zz0p5QDx/b6moV8rbp3zIinkR9fs0qTM4bP4O/Dfpo2Zj7oDd0JA=
