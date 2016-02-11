@@ -1,6 +1,7 @@
 body {
   font-family: $font-primary;
   font-weight: $font-primary-weight;
+  font-style: $font-primary-style;
 }
 
 .h1,
@@ -8,13 +9,12 @@ body {
 .h3 {
   font-family: $font-headline;
   font-weight: $font-headline-weight;
+  font-style: $font-headline-style;
 }
 
 .h1 {
   font-size: 32px;
   line-height: 1.1;
-
-  background-color: $brand-b;
 
   @include mq($from: m) {
     font-size: 45px;
