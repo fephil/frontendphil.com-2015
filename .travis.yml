@@ -2,7 +2,6 @@ git:
   depth: 1
 language: node_js
 node_js:
-  - '4.2'
   - 'stable'
 cache:
   directories:
@@ -10,3 +9,6 @@ cache:
 before_script:
   - npm set progress=false
   - npm install gulp-cli -g
+  - chmod +x ./deploy-ghpages.sh
+script: "./deploy-ghpages.sh"
+secure: "zlxiFdOSJevLgzr4k7IOMAFo9z7ADlkY0DMhj7fiSqqEv7dH4qvtaIRXX2Nnwt4cWhkJXd63sFZIzb9aFg7fpeZShwp5UcxAdlfSTlhzik0PZeefJn4hVV+KLZl4OG9d2yvlEmFhacmaZXvJmTb4JNF0W6qLtAElLbm168/v/SadALELRnHKhmOlhc3IY0JL+p2iG9RKIUwoXdrkVvfyYbNiL/iVJ9nYJGUtTyqos+fWXzuu3tOmbjZyZamij/AcyogsRXNbEPX1Q45MlJs9zEMsKigEkm7zv4wCQa/GJoKT4Oa0aevHJSrYB0f1jnonMI/XpgDfeMiiQyOaGF7lcGygKYrzPNsvS/BXtaTC1rLIOCZULIUBYcXNzqkljnI6a9gziFvBLprX+ptqc2EK8l73U3VEgPKqZhuVXP8fjXj92+sMWQak35kZZ/YMXrVUNdVtUQq8QdVlwWWQViO894VHKDobsXzFWX0SBZ8GRZD/Lm3b2fJVOyGdkpnvoRWd9BnMm1jpq4JxoBTl98Mu3mFx2DC4t5UU7/KCuDRH39xLPVnVRbNBwwI5YCfalMLV+Ucji0Brbgu4ncliqqKvAtoOQRqRhFm+Vvnm+H44wS9HrcsGfjEKbrQtDJbfjX2gCzZ0B+1NYtw3Xant6KOyPv6cmPcofP36aB6u/css4rE="
