@@ -5,7 +5,7 @@
 
 **My website!**
 
-* Author: [Phil Lennon](http://frontendphil.co.uk)
+* Author: [Phil Lennon](http://frontendphil.com)
 * Source: [github.com/fephil/frontendphil.com-2016](http://github.com/fephil/frontendphil.com-2016)
 * Issues and Suggestions: [github.com/fephil/frontendphil.com-2016/issues](http://github.com/fephil/frontendphil.com-2016/issues)
 * Twitter: [@frontendphil](http://twitter.com/frontendphil)
