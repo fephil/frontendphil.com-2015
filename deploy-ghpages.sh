@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# If any command errors, fail Travis
+set -e
+
 # Define variables depending on the branch
 if [[ $TRAVIS_BRANCH == 'master' ]]
   then
