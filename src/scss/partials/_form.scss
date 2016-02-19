@@ -1,0 +1,23 @@
+.form {
+  border: 1px dashed #c1c1c1;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px 20px 20px;
+
+  &__label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  &__submit {
+    display: block;
+  }
+}
