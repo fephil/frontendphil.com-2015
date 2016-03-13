@@ -13,10 +13,7 @@
     "url": "https://github.com/fephil/frontendphil.com-2016/issues"
   },
   "engines": {
-    "node": ">= 4"
-  },
-  "scripts": {
-    "test": "gulp deploy --production --debug"
+    "node": "= 5"
   },
   "devDependencies": {
     "autoprefixer": "6.3.1",
