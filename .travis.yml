@@ -2,18 +2,14 @@ git:
   depth: 1
 language: node_js
 node_js:
-- 4
+- 5
 cache:
   directories:
   - node_modules
 before_script:
 - npm install gulp-cli -g
 - chmod +x ./deploy-azure.sh
-deploy:
-  provider: script
-  script: deploy-azure.sh
-  on:
-    branch: master
+script: ./deploy-azure.sh
 env:
   global:
   - secure: nHduWFSmmzv6DcjmAWbBidRNnlZJBommhayW69UtXYD5GONBDr2rdLobpaoL0fRI+w5xQ0WDJO41k9uW1Slu8ZCtsXJ/EvOhLAur4gW0jWa2uy08Ga+kzBuBR9JIbwdd8uTss53xBNgKCxuoMC39d1fHjwuIlrYwyFAn39WwQBEFOEg3PExQlEdrA5arvQtoRRU1jSkB3MKhRVQxS4TYRYXeYmvLZH4roz6DVYLAwlknxFszyVYLY32+K30LEPn7/YMpI8uS3+EmqIT/+oiZHJGZPK5wCE8cSVIf9UQ/vLQLvvl6EFhIaBCEnzBVGVrBdoJVD61MjMo65mYiOvwvaW1aLY1nrr1xyExqp8Z39+FOis3CvODZe9N6sN4iiLZRDDZmhnV5uhoyzOacgJcpKd2s3b9d8tbkzxpfZJttdv3yklrU7wPxYd84TXP/1LeBodU1iKk2mDhDIR1iIDLiXPPLzRIiUsE4YiglXvndCwIH7S19dbxRbgITUOPSQ9dul8tI1JhgwvFQNnVaqEo+v5zXg2i+BJDZTcrKPiPlRVAKQU/RE9v9NUQVTpd5UKHY303yJTYmKd9SCjRVL3KpTDp8ZiPfFyDSaVfuasJquUQg5FFR3BmVLjVP5vBH1kxS7l2xvRwp/sUVYCgoEV8JnMGrTLYERQAqdQMJ1HK00cM=
