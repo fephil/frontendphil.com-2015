@@ -21,4 +21,4 @@ cd _dist
 git init
 git add -A
 git commit -m "Travis CI automatic build for $THE_COMMIT"
-git push --force --quiet "https://${AZURE_USER}:${AZURE_PASSWORD}@${AZURE_WEBSITE}.scm.azurewebsites.net:443/${AZURE_WEBSITE}.git" master > /dev/null 2>&1
+git push --quiet "https://${AZURE_USER}:${AZURE_PASSWORD}@${AZURE_WEBSITE}.scm.azurewebsites.net:443/${AZURE_WEBSITE}.git" master > /dev/null 2>&1
