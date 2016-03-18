@@ -1,6 +1,6 @@
 {
   "name": "frontendphil.com-2016",
-  "description": "The website for Phil Lennon",
+  "description": "The website for Phil Lennon - https://frontendphil.com",
   "version": "0.1.0",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
@@ -13,7 +13,8 @@
     "url": "https://github.com/fephil/frontendphil.com-2016/issues"
   },
   "engines": {
-    "node": "= 5"
+    "node": "= 4",
+    "npm" : "= 3"
   },
   "devDependencies": {
     "autoprefixer": "6.3.1",
