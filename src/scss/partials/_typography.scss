@@ -10,11 +10,11 @@ body {
   font-family: $font-headline;
   font-weight: $font-headline-weight;
   font-style: $font-headline-style;
+  line-height: 1.3;
 }
 
 .h1 {
   font-size: 32px;
-  line-height: 1.1;
 
   @include mq($from: m) {
     font-size: 45px;
@@ -23,7 +23,6 @@ body {
 
 .h2 {
   font-size: 24px;
-  line-height: 1.2;
 
   @include mq($from: m) {
     font-size: 31px;
@@ -36,6 +35,11 @@ body {
   @include mq($from: m) {
     font-size: 22px;
   }
+}
+
+p,
+li {
+  line-height: 1.5;
 }
 
 a {
