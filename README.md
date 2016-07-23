@@ -1,12 +1,12 @@
-# frontendphil.com-2016
+# frontendphil.com-v1
 
-[![Build Status](https://travis-ci.org/fephil/frontendphil.com-2016.svg?branch=master)](https://travis-ci.org/fephil/frontendphil.com-2016)
+[![Build Status](https://travis-ci.org/fephil/frontendphil.com-v1.svg?branch=master)](https://travis-ci.org/fephil/frontendphil.com-v1)
 
 **My website!**
 
 * Author: [Phil Lennon](https://frontendphil.com)
-* Source: [github.com/fephil/frontendphil.com-2016](https://github.com/fephil/frontendphil.com-2016)
-* Issues and Suggestions: [github.com/fephil/frontendphil.com-2016/issues](https://github.com/fephil/frontendphil.com-2016/issues)
+* Source: [github.com/fephil/frontendphil.com-v1](https://github.com/fephil/frontendphil.com-v1)
+* Issues and Suggestions: [github.com/fephil/frontendphil.com-v1/issues](https://github.com/fephil/frontendphil.com-v1/issues)
 * Twitter: [@frontendphil](https://twitter.com/frontendphil)
 * Email: [enquiry@frontendphil.com](mailto:enquiry@frontendphil.com)
 * Trello Life List [http://bit.ly/life-list](http://bit.ly/life-list)

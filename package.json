@@ -1,20 +1,16 @@
 {
-  "name": "frontendphil.com-2016",
+  "name": "frontendphil.com-v1",
   "description": "The website for Phil Lennon - https://frontendphil.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fephil/frontendphil.com-2016.git"
+    "url": "https://github.com/fephil/frontendphil.com-v1.git"
   },
   "bugs": {
-    "url": "https://github.com/fephil/frontendphil.com-2016/issues"
-  },
-  "engines": {
-    "node": "= 4",
-    "npm" : "= 3"
+    "url": "https://github.com/fephil/frontendphil.com-v1/issues"
   },
   "devDependencies": {
     "autoprefixer": "6.3.1",
