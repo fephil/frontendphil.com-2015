@@ -14,32 +14,33 @@ body {
 }
 
 .h1 {
-  font-size: 32px;
+  font-size: 36px;
 
   @include mq($from: m) {
-    font-size: 45px;
+    font-size: 49px;
   }
 }
 
 .h2 {
-  font-size: 24px;
+  font-size: 28px;
 
   @include mq($from: m) {
-    font-size: 31px;
+    font-size: 35px;
   }
 }
 
 .h3 {
-  font-size: 18px;
+  font-size: 22px;
 
   @include mq($from: m) {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
 p,
 li {
   line-height: 1.5;
+  font-size: 20px;
 }
 
 a {
