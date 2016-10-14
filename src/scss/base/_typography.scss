@@ -1,39 +1,29 @@
 // Typography styles
 $Typography: (
   h1: (
-    font-size: 32px,
-    font-size--medium: 45px,
-    font-size--large: 45px,
+    font-size: 30px,
+    font-size--medium: 49px,
+    font-size--large: 49px,
     font-family: $font-headline,
     font-weight: $font-headline-weight,
-    line-height: 0.9,
+    line-height: 1.3,
     margin-bottom: ($spacer * 2),
     letter-spacing: 20
   ),
   h2: (
     font-size: 24px,
-    font-size--medium: 31px,
-    font-size--large: 31px,
+    font-size--medium: 35px,
+    font-size--large: 35px,
     font-family: $font-headline,
     font-weight: $font-headline-weight,
-    line-height: 0.9,
-    margin-bottom: ($spacer * 2),
-    letter-spacing: 20
-  ),
-  h3: (
-    font-size: 16px,
-    font-size--medium: 22px,
-    font-size--large: 22px,
-    font-family: $font-headline,
-    font-weight: $font-headline-weight,
-    line-height: 0.9,
+    line-height: 1.3,
     margin-bottom: ($spacer * 2),
     letter-spacing: 20
   )
 );
 
 // Produces .h1, h1, .h2, h2, etc...
-@for $i from 1 to 4 {
+@for $i from 1 to 3 {
   h#{$i},
   .h#{$i} {
     font-size: map-deep-get($Typography, h#{$i}, font-size);
@@ -54,54 +44,6 @@ $Typography: (
   }
 }
 
-b,
-strong {
-  font-family: $font-headline;
-  font-weight: $font-headline-weight;
-}
-
-a {
-  color: inherit;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-
-
-/*
-body {
-  font-family: $font-primary;
-  font-weight: $font-primary-weight;
-  font-style: $font-primary-style;
-}
-
-.h1,
-.h2 {
-  font-family: $font-headline;
-  font-weight: $font-headline-weight;
-  font-style: $font-headline-style;
-  line-height: 1.3;
-}
-
-.h1 {
-  font-size: 30px;
-
-  @include mq($from: m) {
-    font-size: 49px;
-  }
-}
-
-.h2 {
-  font-size: 24px;
-
-  @include mq($from: m) {
-    font-size: 35px;
-  }
-}
-
 ul {
   padding-left: 20px;
 }
@@ -116,7 +58,17 @@ li {
   }
 }
 
+b,
+strong {
+  font-family: $font-headline;
+  font-weight: $font-headline-weight;
+}
+
 a {
   color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
-*/
