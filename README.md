@@ -15,7 +15,7 @@
 
 This is the source code for the website of Phil Lennon.
 
-This website has been made with my frontend workflow [Garrus v0.6.0](https://github.com/fephil/garrus).
+This website has been made with my frontend workflow [Garrus v0.6.1](https://github.com/fephil/garrus).
 
 ## Install
 
