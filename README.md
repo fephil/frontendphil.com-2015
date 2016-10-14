@@ -19,8 +19,6 @@ This website has been made with my frontend workflow [Garrus v0.6.1](https://git
 
 ## Install
 
-Download the latest stable release from [GitHub](https://github.com/fephil/garrus/releases). Once this has been done:
-
 * Install Node V4 LTS or Node V6,
 * Run in Terminal: `npm i gulp-cli -g` (Gulp does not need to be installed globally),
 * Navigate to the workflow folder in command line Terminal,
