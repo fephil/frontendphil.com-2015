@@ -1,7 +1,5 @@
 # frontendphil.com-v1
 
-[![Build Status](https://travis-ci.org/fephil/frontendphil.com-v1.svg?branch=master)](https://travis-ci.org/fephil/frontendphil.com-v1)
-
 **My website!**
 
 * Author: [Phil Lennon](https://frontendphil.com)
@@ -17,7 +15,7 @@
 
 This is the source code for the website of Phil Lennon.
 
-This website has been made with my frontend workflow [Garrus v0.3.2](https://github.com/fephil/garrus), and is automatically built with Travis CI and deployed to Azure.
+This website has been made with my frontend workflow [Garrus v0.6.0](https://github.com/fephil/garrus).
 
 ## Install
 

@@ -1,0 +1,71 @@
+// Media Queries
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+  xs:  360px, s:   480px, m:   700px, l:   900px, xl:  1300px, );
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: l;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (s, m, l).
+$mq-show-breakpoints: (xs, s, m, l, xl);
+
+// Site Variables
+$base-font-size: 16px; // Recommended to not change this
+$site-container: rem(1300px);
+$site-gutter: rem(20px);
+$grid-gutter: .25; // Quarter of column width
+$column-small: 6;
+$column-large: 12;
+$grid-debug: show; // Change this to show or hide
+$spacer: 10px;
+
+// Colours
+$brand-a: rgba(50, 120, 50, 1);
+$brand-b: rgba(50, 120, 50, .25);
+
+// Colours
+$color-white: #ffffff;
+$color-black: #000000;
+
+$brand-a: #f0f0f0;
+$brand-b: #ffce00;
+$brand-c: #4286f4;
+
+// For looping in _color.scss
+$colors: (
+  -wh: $color-white,
+  -bl: $color-black,
+  -a: $brand-a,
+  -b: $brand-b,
+  -c: $brand-c
+);
+
+
+// Fonts
+$font-primary: "ff-meta-web-pro", sans-serif;
+$font-primary-weight: 400;
+$font-primary-style: normal;
+
+$font-headline: "ff-meta-serif-web-pro", serif;
+$font-headline-weight: 500;
+$font-headline-style: italic;
+
+// Default Grid Options
+// -----------------------------
+$susy: (
+  columns: $column-small, container: $site-container, gutters: $grid-gutter, global-box-sizing: border-box, gutter-position: after, debug: (
+    image: $grid-debug
+  )
+);
