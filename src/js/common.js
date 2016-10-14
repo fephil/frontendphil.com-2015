@@ -1,25 +1,30 @@
-/* global $ */
+require.ensure(['holderjs', 'svg4everybody'], function(require) {
+  const Holder = require('holderjs')
+  const Svg4everybody = require('svg4everybody')
 
-import Holder from 'holderjs'
-import FastClick from 'fastclick'
-import svg4everybody from 'svg4everybody'
+  // Cuts the mustard check to add js class
+  if ('querySelector' in document && 'addEventListener' in window) {
+    var html = document.querySelector('html')
+    html.classList.remove('no-js')
+    html.classList.add('js')
 
-// jQuery test
-console.log('testing if jquery is loaded globally:')
-console.log($)
+    // Check if we need fastclick
+    if ('touchAction' in document.body.style) {
+      document.body.style.touchAction = 'manipulation'
+    } else {
+      require.ensure(['fastclick'], (require) => {
+        const FastClick = require('fastclick')
 
-// Cuts the mustard check to add js class
-if ('querySelector' in document && 'addEventListener' in window) {
-  var html = document.querySelector('html')
-  html.classList.remove('no-js')
-  html.classList.add('js')
+        window.addEventListener('load', () => {
+          FastClick.attach(document.body)
+        })
+      }, 'fastclick')
+    }
 
-  // Add fastclick
-  FastClick.attach(document.body)
+    // SVG support
+    Svg4everybody()
 
-  // Run Holder
-  Holder.run({})
-
-  // SVG support
-  svg4everybody()
-}
+    // Run Holder
+    Holder.run({})
+  }
+})

@@ -1,19 +1,45 @@
-// Non outputted Sass
-@import 'modules/functions';
-@import 'modules/variables';
-@import 'modules/mixins';
+/*
+* ITCSS information
+*
+* 1. Tools - Mixins and functions for SASS.
+* 2. Settings - Global variables for SASS.
+* 3. Generic - Vendor styles.
+* 4. Base - Elements with no classes and IDs, eg typography.
+* 5. Objects - Code for things like layout and structure.
+* 6. Components - Styling for modules of code such as an accordion.
+* 7. Trumps - Style overrides.
+*
+*/
 
-// Vendor files
-@import 'vendor/normalize';
-@import 'sass-mq'; // from npm
-@import 'susy'; // from npm
+// Tools
+@import 'tools/functions';
+@import 'tools/mixins';
 
-// Partials
-@import 'partials/base';
-// @import 'partials/svgsprite';
-@import 'partials/container';
-@import 'partials/typography';
-@import 'partials/form';
+// Settings
+@import 'settings/variables';
 
-// @import 'partials/header';
-// @import 'partials/footer';
+// Generic
+@import "../../node_modules/normalize.css/normalize";
+@import '../../node_modules/sass-mq/mq.scss';
+@import '../../node_modules/susy/sass/susy.scss';
+
+// Base
+@import 'base/boxsizing';
+@import 'base/elements';
+@import 'base/typography';
+
+// Objects
+@import 'objects/container';
+
+// Components
+@import 'components/svgsprite';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/form';
+
+// Trumps
+@import 'trumps/color';
+@import 'trumps/text';
+@import 'trumps/spacing';
+@import 'trumps/visibility';
+@import 'trumps/print';

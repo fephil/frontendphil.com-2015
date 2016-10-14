@@ -1,8 +1,9 @@
-// Load global config and gulp
-import config from '../foley.json'
+// Load paths and gulp
+import paths from '../config/paths.json'
 import gulp from 'gulp'
 
 // Specific task modules
+import config from '../config/autoprefixer.json'
 import { argv as argv } from 'yargs'
 import debug from 'gulp-debug'
 import gulpif from 'gulp-if'
@@ -12,8 +13,6 @@ import browserSync from 'browser-sync'
 import sourcemaps from 'gulp-sourcemaps'
 import sass from 'gulp-sass'
 import postcss from 'gulp-postcss'
-import eyeglass from 'eyeglass'
-const sassOptions = {} // put whatever eyeglass and node-sass options you need here.
 
 // Postcss output modules
 import autoprefixer from 'autoprefixer'
@@ -22,15 +21,16 @@ import mqpacker from 'css-mqpacker'
 import cssnano from 'cssnano'
 
 // Postcss workflow modules
-import scss from 'postcss-scss'
+import syntax from 'postcss-scss'
 import reporter from 'postcss-reporter'
 import stylelint from 'stylelint'
+import stylefmt from 'stylefmt'
 
 // Output specific plugins
 const output = [
-  autoprefixer({ browsers: config.autoprefixer.browsers }),
+  autoprefixer({ browsers: config.browsers }),
   pxtorem({ replace: true }),
-  mqpacker()
+  mqpacker({ sort: true })
 ]
 
 // Add cssnano if there is a production flag
@@ -46,18 +46,25 @@ const workflow = [
 
 // Sass & Postcss task
 gulp.task('scss', () => {
-  return gulp.src(config.paths.scss + '**/*.scss')
+  return gulp.src(paths.scss + '**/*.scss')
   .pipe(gulpif(argv.debug === true, debug({title: 'CSS Processed:'})))
   .pipe(gulpif(!argv.production, sourcemaps.init())) // Sourcemaps if there is no production flag
-  .pipe(sass(eyeglass(sassOptions)).on('error', sass.logError))
+  .pipe(sass().on('error', sass.logError))
   .pipe(postcss(output))
   .pipe(gulpif(!argv.production, sourcemaps.write('.'))) // Sourcemaps if there is no production flag
-  .pipe(gulp.dest(config.paths.buildAssets + 'css'))
+  .pipe(gulp.dest(paths.buildAssets + 'css'))
   .pipe(browserSync.stream({match: '**/*.css'}))
+})
+
+// stylefmt task
+gulp.task('scssfmt', () => {
+  return gulp.src([paths.scss + '**/*.scss', '!' + paths.scss + 'generic{,/**}'])
+  .pipe(postcss([stylefmt], {syntax: syntax}))
+  .pipe(gulp.dest(paths.scss))
 })
 
 // Stylelint task
 gulp.task('scsslint', () => {
-  return gulp.src([config.paths.scss + '**/*.scss', '!' + config.paths.scss + 'vendor{,/**}'])
-  .pipe(postcss(workflow, {syntax: scss}))
+  return gulp.src([paths.scss + '**/*.scss', '!' + paths.scss + 'generic{,/**}'])
+  .pipe(postcss(workflow, {syntax: syntax}))
 })
