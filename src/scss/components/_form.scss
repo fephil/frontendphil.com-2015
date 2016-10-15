@@ -1,5 +1,6 @@
 .form {
   display: block;
+  margin-top: ($spacer * 2);
 
   &__label {
     margin-right: 5px;
@@ -9,24 +10,48 @@
 
   &__input {
     width: 100%;
-    max-width: 280px;
     margin-right: 15px;
     margin-bottom: 20px;
-    display: inline-block;
-    padding: 4px 8px;
+    display: block;
+    padding: 12px 12px;
     border: 1px solid #d1d1d1;
-    appearance: none !important;
+    appearance: none;
     border-radius: 0;
     box-shadow: none;
+    max-width: 300px;
+    font-size: $font-size-primary;
+
+    @include mq($from: s) {
+      margin-bottom: 0px;
+      display: inline-block;
+    }
+
+    @include mq($from: m) {
+      font-size: $font-size-primary-lg;
+    }
   }
 
   &__submit {
-    display: inline-block;
-    padding: 4px 8px;
-    appearance: none !important;
+    display: block;
+    padding: 12px 36px;
+    appearance: none;
     background: none;
     border-radius: 0;
     border: 1px solid #d1d1d1;
-    margin-bottom: 20px;
+    font-size: $font-size-primary;
+    cursor: pointer;
+    transition: border 150ms ease-in-out;
+
+    @include mq($from: s) {
+      display: inline-block;
+    }
+
+    @include mq($from: m) {
+      font-size: $font-size-primary-lg;
+    }
+
+    &:hover {
+      border: 1px solid #111111;
+    }
   }
 }

@@ -54,13 +54,16 @@ $colors: (
 
 
 // Fonts
-$font-primary: "ff-meta-web-pro", sans-serif;
+$font-primary: "source-sans-pro",sans-serif;
 $font-primary-weight: 400;
 $font-primary-style: normal;
 
-$font-headline: "ff-meta-serif-web-pro", serif;
-$font-headline-weight: 500;
-$font-headline-style: italic;
+$font-headline: "jaf-domus",sans-serif;
+$font-headline-weight: 600;
+$font-headline-style: normal;
+
+$font-size-primary: 16px;
+$font-size-primary-lg: 20px;
 
 // Default Grid Options
 // -----------------------------
