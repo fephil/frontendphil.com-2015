@@ -32,24 +32,18 @@ $grid-debug: hide; // Change this to show or hide
 $spacer: 10px;
 
 // Colours
-$brand-a: rgba(50, 120, 50, 1);
-$brand-b: rgba(50, 120, 50, .25);
-
-// Colours
 $color-white: #ffffff;
 $color-black: #000000;
 
-$brand-a: #f0f0f0;
-$brand-b: #ffce00;
-$brand-c: #4286f4;
+$brand-a: #4256f4;
+$brand-b: #d1d1d1;
 
 // For looping in _color.scss
 $colors: (
   -wh: $color-white,
   -bl: $color-black,
   -a: $brand-a,
-  -b: $brand-b,
-  -c: $brand-c
+  -b: $brand-b
 );
 
 
