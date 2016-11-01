@@ -1,7 +1,7 @@
 {
   "name": "frontendphil.com-v1",
   "description": "The website for Phil Lennon - https://frontendphil.com",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
