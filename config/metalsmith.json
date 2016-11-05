@@ -30,12 +30,10 @@
     },
     "metalsmith-robots": {
       "useragent": "*",
-      "allow": ["about.html", "contact.html"],
-      "disallow": ["test.html"],
-      "sitemap": "http://www.example.com/sitemap.xml"
+      "sitemap": "https://www.frontendphil.com/sitemap.xml"
     },
     "metalsmith-mapsite": {
-      "hostname": "http://www.example.com"
+      "hostname": "https://www.frontendphil.com"
     }
   }
 }
