@@ -8,15 +8,23 @@ priority: 1.0
 public: true
 ---
 
-<div class="block m-t-1">
+<div class="block photo m-t-1">
   <div class="block__inner container">
-    <h1 class="h1">frontendphil</h1>
-    {{>available-yes }}
-    {{!>available-no date='November'}}
+    <div class="photo__primary">
+      <h1 class="h1">frontendphil</h1>
+      {{>available-yes }}
+      {{!>available-no date='November'}}
 
-    <p>Phil Lennon - Freelance Frontend &amp; WordPress Developer, based in Manchester.</p>
-    <p>I specialise in building hand crafted, accessible and high performance bespoke websites, using a Static Site Generator or WordPress.</p>
-    <p>I consult and craft modern digital workflows.</p>
+      <p>Phil Lennon - Freelance Frontend &amp; WordPress Developer, based in Manchester.</p>
+      <p>I specialise in building hand crafted, accessible and high performance bespoke websites, using a Static Site Generator or WordPress.</p>
+      <p>I consult and craft modern digital workflows.</p>
+    </div>
+    <div class="photo__secondary">
+      <picture>
+        <source srcset="{{path.url}}assets/img/frontendphil-portrait.jpg" media="(min-width: 700px)">
+        <img srcset="{{path.url}}assets/img/frontendphil-landscape.jpg" alt="Picture of Phil Lennon speaking at Frontend North 2016">
+      </picture>
+    </div>
   </div>
 </div>
 

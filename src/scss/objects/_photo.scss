@@ -1,0 +1,19 @@
+.photo {
+
+  &__primary {
+    @include mq($from: m) {
+      @include span(8 of $column-large);
+    }
+  }
+
+  &__secondary {
+    margin-top: ($spacer * 2);
+
+    @include mq($from: m) {
+      @include span(4 of $column-large);
+      @include last();
+
+      margin-top: 0;
+    }
+  }
+}
