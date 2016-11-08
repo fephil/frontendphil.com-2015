@@ -1,6 +1,6 @@
 {
   "name": "frontendphil.com-v1",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "dependencies": {
     "abab": {
       "version": "1.0.3",
@@ -2530,7 +2530,8 @@
     "escape-html": {
       "version": "1.0.3",
       "from": "escape-html@>=1.0.1 <1.1.0",
-      "resolved": "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
+      "resolved": "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz",
+      "dev": true
     },
     "escape-string-regexp": {
       "version": "1.0.5",
@@ -4460,11 +4461,6 @@
       "resolved": "https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz",
       "dev": true
     },
-    "holderjs": {
-      "version": "2.9.4",
-      "from": "holderjs@2.9.4",
-      "resolved": "https://registry.npmjs.org/holderjs/-/holderjs-2.9.4.tgz"
-    },
     "home-or-tmp": {
       "version": "1.0.0",
       "from": "home-or-tmp@>=1.0.0 <2.0.0",
@@ -5131,11 +5127,6 @@
       "dev": true,
       "optional": true
     },
-    "jquery": {
-      "version": "3.1.1",
-      "from": "jquery@3.1.1",
-      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz"
-    },
     "js-base64": {
       "version": "2.1.9",
       "from": "js-base64@>=2.1.9 <3.0.0",
@@ -5429,9 +5420,10 @@
       }
     },
     "lodash": {
-      "version": "4.16.4",
-      "from": "lodash@4.16.4",
-      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.16.4.tgz"
+      "version": "4.16.6",
+      "from": "lodash@>=4.14.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz",
+      "dev": true
     },
     "lodash._arraymap": {
       "version": "3.0.0",
@@ -6939,6 +6931,11 @@
         }
       }
     },
+    "picturefill": {
+      "version": "3.0.2",
+      "from": "picturefill@latest",
+      "resolved": "https://registry.npmjs.org/picturefill/-/picturefill-3.0.2.tgz"
+    },
     "pify": {
       "version": "2.3.0",
       "from": "pify@>=2.0.0 <3.0.0",
@@ -7970,11 +7967,6 @@
       "from": "sha.js@2.2.6",
       "resolved": "https://registry.npmjs.org/sha.js/-/sha.js-2.2.6.tgz",
       "dev": true
-    },
-    "shaven": {
-      "version": "0.8.1",
-      "from": "shaven@>=0.8.1 <0.9.0",
-      "resolved": "https://registry.npmjs.org/shaven/-/shaven-0.8.1.tgz"
     },
     "shebang-regex": {
       "version": "1.0.0",
