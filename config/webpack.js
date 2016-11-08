@@ -25,8 +25,7 @@ else {
 
 module.exports = {
   entry: {
-    home: './' + paths.js + 'app-home',
-    blog: './' + paths.js + 'app-blog'
+    home: './' + paths.js + 'app-home'
   },
   output: {
     path: './' + paths.buildAssets + 'js/',

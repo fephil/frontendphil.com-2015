@@ -1,20 +1,35 @@
-/* global feature */
-
-import './common'
 import 'feature.js'
-import { testFunction } from './example'
+const Svg4everybody = require('svg4everybody')
 
-// Cuts the mustard check to run modules
+// Cuts the mustard check to add js class
 if ('querySelector' in document && 'addEventListener' in window) {
-  console.log('run home modules')
+  var html = document.querySelector('html')
+  html.classList.remove('no-js')
+  html.classList.add('js')
 
-  // Example feature.js usage
-  if (feature.touch) {
-    console.log('touch is supported')
+  // Check if we need fastclick
+  if ('touchAction' in document.body.style) {
+    document.body.style.touchAction = 'manipulation'
   } else {
-    console.log('touch is NOT supported')
+    require.ensure(['fastclick'], (require) => {
+      const FastClick = require('fastclick')
+
+      window.addEventListener('load', () => {
+        FastClick.attach(document.body)
+      })
+    }, 'fastclick')
   }
 
-  // Example module
-  testFunction('Example Module: output this message to the console')
+  // Check if we need picturefill
+  if (feature.pictureElement) {
+  } else {
+    require.ensure(['picturefill'], (require) => {
+      const picturefill = require('picturefill')
+
+      picturefill();
+    }, 'picturefill')
+  }
+
+  // SVG support
+  Svg4everybody()
 }
