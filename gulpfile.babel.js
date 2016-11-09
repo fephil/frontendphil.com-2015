@@ -12,7 +12,10 @@ const tasks = requireDir(__dirname + '/tasks') // eslint-disable-line
 gulp.task('default', (callback) => {
   runSequence(
     'clean',
+    'cachebusting',
     'metalsmith',
+    'standardlint',
+    'standardlinttests',
     'mocha',
     ['htmlmin', 'svgsprite', 'scss', 'webpack', 'img', 'copy'],
     ['browsersync', 'watch'],
@@ -24,7 +27,10 @@ gulp.task('default', (callback) => {
 gulp.task('deploy', (callback) => {
   runSequence(
     'clean',
+    'cachebusting',
     'metalsmith',
+    'standardlint',
+    'standardlinttests',
     'mocha',
     ['htmlmin', 'svgsprite', 'scss', 'webpack', 'img', 'copy'],
     'crticalcss',
@@ -38,6 +44,7 @@ gulp.task('auditcode', (callback) => {
     'scssfmt',
     'scsslint',
     'standardlint',
+    'standardlinttests',
     'mocha',
     callback
   )

@@ -46,6 +46,11 @@ $colors: (
   -b: $brand-b
 );
 
+// Paths - Do not include trailing slash
+// eg: background-image: image('basket/background.jpg');
+$path-base: '..';
+$path-fonts: 'fonts';
+$path-images: 'img';
 
 // Fonts
 $font-primary: "skolar-sans-latin",sans-serif;
