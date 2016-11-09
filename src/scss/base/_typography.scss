@@ -66,6 +66,14 @@ li {
   }
 }
 
+small {
+  font-size: $font-size-small;
+
+  @include mq($from: m) {
+    font-size: $font-size-small-lg;
+  }
+}
+
 b,
 strong {
   font-family: $font-headline;

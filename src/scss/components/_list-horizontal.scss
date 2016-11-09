@@ -1,0 +1,23 @@
+.list-horizontal {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    @include mq($from: m) {
+      display: inline-block;
+
+      &::after {
+        content: '|';
+        padding-left: $spacer;
+        padding-right: $spacer;
+      }
+
+      &:last-of-type {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
