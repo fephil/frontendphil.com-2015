@@ -1,3 +1,5 @@
+/* global feature */
+
 import 'feature.js'
 const Svg4everybody = require('svg4everybody')
 
@@ -26,7 +28,7 @@ if ('querySelector' in document && 'addEventListener' in window) {
     require.ensure(['picturefill'], (require) => {
       const picturefill = require('picturefill')
 
-      picturefill();
+      picturefill()
     }, 'picturefill')
   }
 
