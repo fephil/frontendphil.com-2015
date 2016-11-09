@@ -12,4 +12,20 @@
 
   }
   */
+
+  &__split {
+    @include mq($from: m) {
+      @include span(6 of $column-large);
+    }
+
+    &:last-of-type {
+      margin-top: ($spacer * 2);
+
+      @include mq($from: m) {
+        @include last();
+
+        margin-top: 0;
+      }
+    }
+  }
 }
