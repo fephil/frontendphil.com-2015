@@ -2,6 +2,7 @@
 
 import 'feature.js'
 const Svg4everybody = require('svg4everybody')
+import jump from 'jump.js'
 
 // Cuts the mustard check to add js class
 if ('querySelector' in document && 'addEventListener' in window) {
@@ -34,4 +35,24 @@ if ('querySelector' in document && 'addEventListener' in window) {
 
   // SVG support
   Svg4everybody()
+
+  // Anchor Smoothscroll
+  // Note: This would normally be its own module
+  function smoothScroll() {
+    const links = document.querySelectorAll('a')
+
+    for (let i = 0; i < links.length; i++) {
+      let theHref = links[i].getAttribute('href')
+      let theHash = theHref.split('#')[1]
+
+      if ( theHash ) {
+        links[i].addEventListener('click', function (e) {
+          e.preventDefault()
+          jump('#' + theHash)
+        })
+      }
+    }
+  }
+
+  smoothScroll()
 }

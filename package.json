@@ -1,7 +1,7 @@
 {
   "name": "frontendphil.com-v1",
   "description": "The website for Phil Lennon - https://frontendphil.com",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
@@ -72,6 +72,7 @@
   "dependencies": {
     "fastclick": "1.0.6",
     "feature.js": "1.0.0",
+    "jump.js": "1.0.1",
     "normalize.css": "5.0.0",
     "picturefill": "3.0.2",
     "svg4everybody": "2.1.0"
