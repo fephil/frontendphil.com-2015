@@ -2,7 +2,7 @@
 
   &__primary {
     @include mq($from: m) {
-      @include span(8 of $column-large);
+      @include span(6 of $column-large);
     }
   }
 
@@ -10,7 +10,7 @@
     margin-top: ($spacer * 2);
 
     @include mq($from: m) {
-      @include span(4 of $column-large);
+      @include span(2 of $column-large);
       @include last();
 
       margin-top: 0;

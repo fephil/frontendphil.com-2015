@@ -15,7 +15,7 @@
 
   &__split {
     @include mq($from: m) {
-      @include span(6 of $column-large);
+      @include span(4 of $column-large);
     }
 
     &:last-of-type {
