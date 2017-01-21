@@ -2,7 +2,7 @@
 
   &__primary {
     @include mq($from: m) {
-      @include span(6 of $column-large);
+      @include span(5 of $column-large);
     }
   }
 
