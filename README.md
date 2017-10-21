@@ -3,8 +3,8 @@
 **My website!**
 
 * Author: [Phil Lennon](https://frontendphil.com)
-* Source: [github.com/fephil/frontendphil.com-v1](https://github.com/fephil/frontendphil.com-v1)
-* Issues and Suggestions: [github.com/fephil/frontendphil.com-v1/issues](https://github.com/fephil/frontendphil.com-v1/issues)
+* Source: [github.com/fephil/frontendphil.com-2015](https://github.com/fephil/frontendphil.com-2015)
+* Issues and Suggestions: [github.com/fephil/frontendphil.com-2015/issues](https://github.com/fephil/frontendphil.com-2015/issues)
 * Twitter: [@frontendphil](https://twitter.com/frontendphil)
 * Email: [enquiry@frontendphil.com](mailto:enquiry@frontendphil.com)
 * Trello Life List [http://bit.ly/life-list](http://bit.ly/life-list)
@@ -22,7 +22,7 @@ This website has been made with my frontend workflow [Garrus v0.7.0](https://git
 * Install Node V4 LTS or Node V6,
 * Run in Terminal: `npm i gulp-cli -g` (Gulp does not need to be installed globally),
 * Navigate to the workflow folder in command line Terminal,
-* Run: `npm i` or `yarn` (if Yarn is installed).
+* Run: `npm i`.
 
 Please note that there are a large amount of development dependencies to install, due to the 'all in one' nature of the workflow. It could possibly take a long time to install all the required modules.
 
