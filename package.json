@@ -1,16 +1,16 @@
 {
   "name": "frontendphil.com-2015",
   "description": "The website for Phil Lennon - https://frontendphil.com",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fephil/frontendphil.com-v1.git"
+    "url": "https://github.com/fephil/frontendphil.com-2015.git"
   },
   "bugs": {
-    "url": "https://github.com/fephil/frontendphil.com-v1/issues"
+    "url": "https://github.com/fephil/frontendphil.com-2015/issues"
   },
   "engines": {
     "node": ">= 4"

@@ -1,6 +1,6 @@
-# frontendphil.com-v1
+# frontendphil.com-2015
 
-**My website!**
+**The website for Phil Lennon**
 
 * Author: [Phil Lennon](https://frontendphil.com)
 * Source: [github.com/fephil/frontendphil.com-2015](https://github.com/fephil/frontendphil.com-2015)
