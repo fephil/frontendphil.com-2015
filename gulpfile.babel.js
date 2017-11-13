@@ -18,6 +18,7 @@ gulp.task('default', (callback) => {
     'standardlinttests',
     'mocha',
     ['htmlmin', 'svgsprite', 'scss', 'webpack', 'img', 'copy'],
+    'bundle-sw',
     ['browsersync', 'watch'],
     callback
   )
@@ -34,6 +35,7 @@ gulp.task('deploy', (callback) => {
     'mocha',
     ['htmlmin', 'svgsprite', 'scss', 'webpack', 'img', 'copy'],
     'crticalcss',
+    'bundle-sw',
     callback
   )
 })

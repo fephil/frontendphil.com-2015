@@ -1,7 +1,7 @@
 {
   "name": "frontendphil.com-2015",
   "description": "The website for Phil Lennon - https://frontendphil.com",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "author": "Phil Lennon <enquiry@frontendphil.com>",
   "private": true,
   "license": "MIT",
@@ -67,6 +67,7 @@
     "susy": "2.2.12",
     "tota11y": "0.1.6",
     "webpack": "1.13.3",
+    "workbox-build": "2.1.1",
     "yargs": "6.3.0"
   },
   "dependencies": {
