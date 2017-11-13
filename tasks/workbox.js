@@ -10,7 +10,7 @@ gulp.task('bundle-sw', () => {
   return wbBuild.generateSW({
     globDirectory: paths.build,
     swDest: paths.build + 'sw.js',
-    globPatterns: ['**\/*.{html,js,css}'],
+    globPatterns: ['**\/*.{html,js,css,jpg,gif,png,svg}'],
     globIgnores: ['tmp-*.html'],
   })
   .then(() => {
