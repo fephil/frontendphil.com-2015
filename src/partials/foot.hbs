@@ -1,20 +1,4 @@
     <script src="{{path.url}}assets/js/commons.js?v={{cachebusting.date}}"></script>
     <script src="{{path.url}}assets/js/{{appName}}.bundle.js?v={{cachebusting.date}}"></script>
-
-    <script>
-      (function() {
-        if (!('serviceWorker' in navigator)) {
-          console.log('Service worker not supported');
-          return;
-        }
-        navigator.serviceWorker.register('sw.js')
-        .then(function(registration) {
-          console.log('SW successfully registered');
-        })
-        .catch(function(error) {
-          console.log('registration failed', error);
-        });
-      })();
-    </script>
   </body>
 </html>
