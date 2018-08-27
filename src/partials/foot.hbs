@@ -1,4 +1,17 @@
     <script src="{{path.url}}assets/js/commons.js?v={{cachebusting.date}}"></script>
     <script src="{{path.url}}assets/js/{{appName}}.bundle.js?v={{cachebusting.date}}"></script>
+
+    <script>
+      (function() {
+        if (!('serviceWorker' in navigator)) {
+          return;
+        }
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(var registration of registrations) {
+            registration.unregister()
+          }
+        })
+      })();
+    </script>
   </body>
 </html>
