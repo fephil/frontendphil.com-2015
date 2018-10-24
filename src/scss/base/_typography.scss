@@ -53,6 +53,13 @@ ul {
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  &.list-split {
+    @include mq($from: s) {
+      column-count: 2;
+      column-gap: 60px;
+    }
+  }
 }
 
 li {
